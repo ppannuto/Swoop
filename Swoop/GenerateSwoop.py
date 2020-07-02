@@ -214,7 +214,7 @@ class Collection:
         if len(self.containedTypes) == 1:
             return rstClassify(initialCap(self.containedTypes[0]))
         else:
-            return ", ".join(map(rstClassify , map(initialCap,self.containedTypes[0:-1]))) + " " + conjunction + " " + rstClassify(initialCap(self.containedTypes[-1]))
+            return ", ".join(map(rstClassify , list(map(initialCap,self.containedTypes[0:-1])))) + " " + conjunction + " " + rstClassify(initialCap(self.containedTypes[-1]))
 
     def get_contained_type_list_string(self, conjunction="or"):
         if len(self.containedTypes) == 1:
@@ -223,7 +223,7 @@ class Collection:
             return ", ".join(map(initialCap,self.containedTypes[0:-1])) + " " + conjunction + " " + initialCap(self.containedTypes[-1])
 
     def get_contained_type_list(self):
-        return map(initialCap,self.containedTypes)
+        return list(map(initialCap,self.containedTypes))
     
 class Map(Collection):
     """
@@ -1324,7 +1324,7 @@ def main(filename):
 
     f = open(filename, "w")
 
-    out = template.render(tags=tags.values())
+    out = template.render(tags=list(tags.values()))
     lines = out.split("\n")
 
     for l in lines:

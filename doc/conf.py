@@ -62,8 +62,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Swoop IR'
-copyright = u'2015, UCSD NVSL'
+project = 'Swoop IR'
+copyright = '2015, UCSD NVSL'
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -223,8 +223,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'CircuitsFromCode.tex', u'CircuitsFromCode Documentation',
-   u'UCSD NVSL', 'manual'),
+  ('index', 'CircuitsFromCode.tex', 'CircuitsFromCode Documentation',
+   'UCSD NVSL', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -253,8 +253,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'circuitsfromcode', u'CircuitsFromCode Documentation',
-     [u'UCSD NVSL'], 1)
+    ('index', 'circuitsfromcode', 'CircuitsFromCode Documentation',
+     ['UCSD NVSL'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -267,8 +267,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'CircuitsFromCode', u'CircuitsFromCode Documentation',
-   u'UCSD NVSL', 'CircuitsFromCode', 'One line description of project.',
+  ('index', 'CircuitsFromCode', 'CircuitsFromCode Documentation',
+   'UCSD NVSL', 'CircuitsFromCode', 'One line description of project.',
    'Miscellaneous'),
 ]
 

@@ -7,12 +7,12 @@ import math
 try:
     from . import testExt
 except ValueError:
-    import testExt
+    from . import testExt
 
 try:
     from . import areaExt as Area
 except ValueError:
-    import areaExt as Area
+    from . import areaExt as Area
 
 from Swoop import *
 
@@ -21,9 +21,9 @@ class TestExtension(unittest.TestCase):
     class MyMixin(object):
 
         def print_my_type(self):
-            print(type(self))
+            print((type(self)))
         def print_my_name(self):
-            print(self.get_name())
+            print((self.get_name()))
         def get_my_type_name(self):
             return type(self).__name__
         def get_my_name(self):
