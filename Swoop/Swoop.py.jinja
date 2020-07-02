@@ -1099,7 +1099,7 @@ class EagleFile(EagleFilePart):
                 ef = pickle.load(open(filename + ".pickle"))
                 return ef
 
-        f = open(filename, "r");
+        f = open(filename, "rb");
         
         if filename[-4:] == ".sch":
             n = cls.from_stream(cls.get_schematic_file_type(), f, bestEffort, DRUFile, pickle)
